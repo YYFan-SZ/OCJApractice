@@ -1,0 +1,72 @@
+<view class="doing-main-container" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd">
+  <view class="doing-question-card">
+    <view class="doing-question-title">{{questions[current].title}}</view>
+    <view class="doing-question-content">
+      <text decode="true">{{questions[current].content}}</text>
+    </view>
+    <view class="doing-options">
+      <view 
+        class="doing-option {{item.selected ? 'selected' : ''}}" 
+        wx:for="{{questions[current].options}}" 
+        wx:key="value"
+        data-index="{{index}}"
+        bindtap="handleSelectOption"
+      >
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+    <view class="doing-answer" wx:if="{{showAnswer}}">
+      <text>答案：{{questions[current].answer}}</text>
+      <view class="doing-explanation">解析：{{questions[current].explanation}}</view>
+    </view>
+  </view>
+  <view class="doing-action-row">
+    <button class="doing-btn" bindtap="handlePrevQuestion" wx:if="{{current > 0}}">上一题</button>
+    <button class="doing-btn main" bindtap="handleSubmitAnswer">
+      {{showAnswer ? (current === questions.length - 1 ? '完成' : '下一题') : '提交答案'}}
+    </button>
+  </view>
+  
+  <!-- 预览按钮 -->
+  <view class="preview-btn" bindtap="handleTogglePreview">
+    <text>题目预览({{current+1}}/{{questions.length}})</text>
+  </view>
+
+  <!-- 题目预览弹窗 -->
+  <view class="preview-modal" wx:if="{{showPreview}}">
+    <view class="preview-header">
+      <text>题目预览 ({{questions.length}}道)</text>
+      <view class="close-btn" bindtap="handleTogglePreview">×</view>
+    </view>
+    
+    <!-- 分组标签 -->
+    <view class="group-tabs">
+      <scroll-view scroll-x class="tab-scroll">
+        <block wx:for="{{groupTabs}}" wx:key="start">
+          <view 
+            class="tab-item {{activeGroup === index ? 'active' : ''}}"
+            bindtap="handleSwitchGroup"
+            data-index="{{index}}"
+          >
+            {{item.start}}-{{item.end}}
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+    
+    <!-- 题目列表 -->
+    <scroll-view class="preview-list" scroll-y scroll-top="{{scrollTop}}">
+      <view class="question-numbers">
+        <block wx:for="{{visibleQuestions}}" wx:key="id">
+          <view 
+            class="number {{getNumberClass(index)}}"
+            bindtap="handleJumpToQuestion"
+            data-index="{{item.index}}"
+          >
+            {{item.index + 1}}
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>
