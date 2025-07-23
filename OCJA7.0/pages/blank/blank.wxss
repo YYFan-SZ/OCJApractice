@@ -1,0 +1,85 @@
+.tiku-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #f6f8fa;
+  padding-top: 60rpx;
+}
+
+.tiku-card {
+  width: 90vw;
+  max-width: 700rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 8rpx 32rpx #dbeafe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40rpx;
+  padding: 40rpx 0 40rpx 0;
+  border: none;
+}
+
+.tiku-btn {
+  width: 80vw;
+  max-width: 540rpx;
+  height: 64rpx;
+  background: linear-gradient(90deg, #7bb7fa 0%, #b3d6f7 100%);
+  color: #fff;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4rpx 16rpx #e0e7ef;
+  letter-spacing: 1rpx;
+}
+
+.tiku-question-card {
+  width: 92vw;
+  max-width: 750rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 8rpx 32rpx #dbeafe;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40rpx;
+  padding: 48rpx 32rpx 48rpx 32rpx;
+  border: none;
+}
+
+.tiku-question-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #2d3a4b;
+  margin-bottom: 24rpx;
+}
+
+.tiku-question-content {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 32rpx;
+  white-space: pre-line;
+}
+
+.tiku-options {
+  width: 100%;
+  margin-bottom: 32rpx;
+}
+
+.tiku-option {
+  font-size: 28rpx;
+  color: #3b3b7a;
+  background: #f6f8fa;
+  border-radius: 12rpx;
+  padding: 18rpx 24rpx;
+  margin-bottom: 18rpx;
+}
+
+.tiku-answer {
+  font-size: 28rpx;
+  color: #1e90ff;
+  font-weight: 600;
+  margin-top: 12rpx;
+} 

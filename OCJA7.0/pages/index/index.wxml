@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="main-container">
+
+  <view class="title">OCJA题库</view>
+  <view class="center-box">
+    <view class="center-title">题库</view>
+    <button class="main-btn" bindtap="goToBlank">点击开始刷题</button>
+  </view>
+  <view class="bottom-row">
+    <view class="bottom-box">
+      <view class="bottom-title">收藏</view>
+      <button class="sub-btn" bindtap="showFeatureTip">点击查看</button>
+    </view>
+    <view class="bottom-box">
+      <view class="bottom-title">错题记录</view>
+      <button class="sub-btn" bindtap="goToWrongQuestions">点击查看</button>
+    </view>
+
+    
+  </view>
+
+<!-- 添加一个占位view让内容撑开 -->
+<view class="content-spacer"></view>
+  
+  <!-- 底部固定按钮 -->
+  <view class="footer">
+    <button class="about-btn" bindtap="goToAbout">关于完整功能</button>
+  </view>
+</view>

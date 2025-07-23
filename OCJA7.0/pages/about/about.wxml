@@ -1,0 +1,31 @@
+<view class="container">
+  
+  
+  <view class="content">
+    <view class="section">
+      <view class="section-title">后续可能完善的功能：</view>
+      <view class="feature-item">1. 题目预览遮挡住了提交或下一题按钮</view>
+      <view class="feature-item">2. 收藏题目、错题记录，删除收藏的题目和错题</view>
+      <view class="feature-item">3. 保存做题记录，清空做题记录</view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">后续可能增加的功能：</view>
+      <view class="feature-item">1.点击开始刷题跳转到的页面只有第一个按钮可以用，下面三个还没开始设置</view>
+      <view class="feature-item">2. 草稿纸功能（平板使用会方便一点）</view>
+      <view class="feature-item">3. 收藏的题目可以记录笔记</view>
+      <view class="feature-item">4. 嵌入AI，让AI给出题目的详解</view>
+      <view class="feature-item">5. 联系客服功能</view>
+      <view class="feature-item">等等等……</view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">开发说明：</view>
+      
+      <view class="notice-item">最近只能完善一点点功能，因为带回家的只有内存快爆炸的旧笔记本电脑</view>
+      <view class="notice-item">剩下的功能只能等下学期回学校时优化了</view>
+      <view class="notice-item">能实现的就尽量实现，不能实现的等以后学了小程序开发这门课再看看能不能实现</view>
+      <view class="notice-item">但是这个小程序最终不会做的那么完美，毕竟考完这个证估计就不会再用这个小程序了</view>
+    </view>
+  </view>
+</view>

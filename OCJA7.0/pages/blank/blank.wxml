@@ -1,0 +1,28 @@
+<view class="tiku-main-container">
+  <view class="tiku-card" wx:if="{{!showQuestion}}">
+    <button class="tiku-btn" bindtap="showFirstQuestion">点击开始刷题 Go！</button>
+  </view>
+  <view class="tiku-question-card" wx:if="{{showQuestion}}">
+    <view class="tiku-question-title">{{question.title}}</view>
+    <view class="tiku-question-content">
+      <text>{{question.content}}</text>
+    </view>
+    <view class="tiku-options">
+      <view class="tiku-option" wx:for="{{question.options}}" wx:key="index">
+        <text>{{item}}</text>
+      </view>
+    </view>
+    <view class="tiku-answer">
+      <text>Answer: {{question.answer}}</text>
+    </view>
+  </view>
+  <view class="tiku-card">
+    <button class="tiku-btn">点击查看全部题目列表</button>
+  </view>
+  <view class="tiku-card">
+    <button class="tiku-btn">点击查看已做题目列表</button>
+  </view>
+  <view class="tiku-card">
+    <button class="tiku-btn">点击查看题目分类</button>
+  </view>
+</view> 
