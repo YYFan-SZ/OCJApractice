@@ -1,0 +1,198 @@
+/**index.wxss**/
+page {
+  background: #f6f8fa;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;  /* 确保容器至少满屏 */
+  box-sizing: border-box;
+  padding-top: 60rpx;
+  background: #f6f8fa;
+  position: relative;  /* 添加这行 */
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 80rpx;
+  color: #2d3a4b;
+  letter-spacing: 2rpx;
+}
+
+.center-box {
+  width: 90vw;
+  max-width: 700rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 8rpx 32rpx #dbeafe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48rpx;
+  padding: 48rpx 0 56rpx 0;
+  border: none;
+}
+
+.center-title {
+  font-size: 44rpx;
+  font-weight: 600;
+  margin-bottom: 36rpx;
+  color: #3b3b7a;
+}
+
+.main-btn {
+  width: 80vw;
+  max-width: 540rpx;
+  height: 68rpx;
+  background: linear-gradient(90deg, #7bb7fa 0%, #b3d6f7 100%);
+  color: #fff;
+  border-radius: 16rpx;
+  font-size: 30rpx;
+  border: none;
+  margin-top: 12rpx;
+  font-weight: 600;
+  box-shadow: 0 4rpx 16rpx #e0e7ef;
+  letter-spacing: 1rpx;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40rpx;
+  margin-top: 0;
+}
+
+.bottom-box {
+  width: 40vw;
+  max-width: 320rpx;
+  min-width: 220rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 16rpx #e0e7ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36rpx 0 36rpx 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+.bottom-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  margin-bottom: 20rpx;
+  color: #3b3b7a;
+}
+
+.sub-btn {
+  width: 70%;
+  min-width: 120rpx;
+  max-width: 200rpx;
+  height: 48rpx;
+  background: linear-gradient(90deg, #7bb7fa 0%, #b3d6f7 100%);
+  color: rgb(255, 255, 255);
+  border-radius: 10rpx;
+  font-size: 24rpx;
+  border: none;
+  margin-top: 10rpx;
+  font-weight: 600;
+  box-shadow: 0 2rpx 8rpx #e0e7ef;
+  letter-spacing: 1rpx;
+  display: flex;          /* 新增 */
+  justify-content: center; /* 新增 */
+  align-items: center;    /* 新增 */
+}
+
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  width: 80%;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.nickname-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-top: .5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.nickname-label {
+  width: 105px;
+}
+
+.nickname-input {
+  flex: 1;
+}
+
+/* 在原有样式后添加 */
+
+/* 内容占位 */
+.content-spacer {
+  flex: 1;
+}
+
+/* 底部固定容器 */
+.footer {
+  width: 100%;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: center;
+  background: #f6f8fa;
+}
+
+/* 修改按钮样式 */
+.about-btn {
+  width: 80vw;
+  max-width: 540rpx;
+  height: 80rpx;
+  background: transparent;
+  color: #7bb7fa;
+  border: 2rpx solid #7bb7fa;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  margin: 0 auto;
+}

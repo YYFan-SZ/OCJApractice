@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/blank/blank",
+    "pages/doing/doing",
+    "pages/about/about"
+    
+  ],
+  "window": {
+    "navigationBarTitleText": "OCJA题库"
+  }
+} 
